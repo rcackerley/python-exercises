@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+.navbar .menu {
+    display: flex;
+    position: relative;
+    position: absolute;
+    z-index: 100;
+    right: 8px;
+}
+.navbar .menu li img {
+    width: 25px;
+}
+.navbar .menu li {
+    flex: 1;
+    display: flex;
+    text-align: center;
+}
+.navbar .menu a {
+    flex: 1;
+    justify-content: center;
+    color: #ffffff;
+    padding: 10px;
+}
+.hero {
+    background-image: radial-gradient(circle at center, rgba(0, 00, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) ), url('images/iron-throne.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.sigil {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sigil:hover {
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    font-size:  5em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    color: white;
+    padding-top: 0;
+    letter-spacing: .05em;
+    }
+.subheading {
+    font-size: 2em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    padding-top:50px;
+}
+@media screen and (max-width:1000px) {
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    }
+}
+@media screen and (max-width:520px) {
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    }
+}
+.attributes {
+    list-style-type: none;
+    list-style-position: outside;
+    padding-left: 0px;
+    text-align:center;
+    color: white;
+}
+.family-name {
+    text-align: center;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.sigil-correction {
+    padding-bottom:10px;
+}
